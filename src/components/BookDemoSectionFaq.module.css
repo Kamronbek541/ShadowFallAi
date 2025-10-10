@@ -1,0 +1,105 @@
+.demoSection {
+  padding: 100px 0;
+  position: relative;
+  /* ---> ИЗМЕНЕНИЕ: Устанавливаем фоновое изображение <--- */
+  /* Путь нужно будет проверить, в React он обрабатывается сборщиком */
+  background-image: url('../assets/back_price.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sectionTitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+/* Главная карточка, которая содержит форму и картинку */
+.formCard {
+  max-width: 950px;
+  margin: 0 auto;
+  background: #2A2A2E; /* Темно-серый фон */
+  border-radius: 24px;
+  display: flex;
+  overflow: hidden; /* Важно, чтобы картинка не вылезала за скругленные углы */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Левая часть с формой */
+.formWrapper {
+  flex: 1;
+  padding: 50px;
+}
+
+.formWrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.demoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.demoForm input {
+  width: 100%;
+  padding: 14px 18px;
+  background: #1C1C1E; /* Еще более темный фон для полей */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.demoForm input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.demoForm input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(165, 0, 225, 0.5);
+}
+
+.submitButton {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+
+/* Правая часть с картинкой */
+.imageWrapper {
+  flex-basis: 40%; /* Задаем базовую ширину для картинки */
+  min-width: 350px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Картинка будет масштабироваться, чтобы заполнить блок */
+  display: block;
+}

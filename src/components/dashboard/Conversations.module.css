@@ -1,0 +1,10 @@
+/* src/components/dashboard/Conversations.module.css */
+.card { background: white; border-radius: 20px; padding: 30px; border: 1px solid #E2E8F0; }
+.card h4 { font-size: 18px; font-weight: 700; margin-bottom: 20px; color: #2D3748; }
+.list { display: flex; flex-direction: column; gap: 20px; }
+.item { display: flex; align-items: center; gap: 15px; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; background: #ddd; flex-shrink: 0; }
+.text { flex-grow: 1; }
+.text strong { color: #2D3748; font-size: 14px; }
+.text p { color: #8A92A6; font-size: 14px; }
+.reply { color: #48BB78; font-weight: 600; font-size: 12px; }

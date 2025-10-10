@@ -1,0 +1,39 @@
+/* Стили для No Access можно скопировать из EducationPage.module.css */
+.noAccess { background: white; border: 1px solid #E2E8F0; border-radius: 20px; padding: 80px 40px; text-align: center; max-width: 700px; margin: 50px auto; }
+.noAccess h2 { font-size: 28px; font-weight: 700; color: #2D3748; margin-bottom: 15px; }
+.noAccess p { font-size: 16px; color: #8A92A6; margin-bottom: 30px; }
+.upgradeButton { background: var(--auth-primary-color); color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+
+.blogPage { display: flex; flex-direction: column; gap: 50px; }
+
+/* --- Top Row --- */
+.topRow { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 30px; }
+.promoCard { position: relative; border-radius: 20px; overflow: hidden; color: white; cursor: pointer; }
+.promoBg { width: 100%; height: 100%; object-fit: cover; }
+.promoOverlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)); }
+.promoOverlay h4 { font-size: 24px; font-weight: 700; }
+.promoOverlay p { font-size: 14px; opacity: 0.9; }
+.promoCode { background: rgba(0,0,0,0.3); padding: 5px 10px; border-radius: 8px; align-self: flex-start; font-weight: bold; }
+.readMore { font-weight: 600; }
+
+/* --- General Section Styles --- */
+.sectionHeader { margin-bottom: 30px; }
+.sectionHeader h3 { font-size: 24px; font-weight: 700; color: #2D3748; }
+.sectionHeader p { font-size: 14px; color: #8A92A6; }
+
+/* --- Recent News --- */
+.newsGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.newsCard { cursor: pointer; }
+.newsThumbnail { height: 150px; background-size: cover; border-radius: 15px; margin-bottom: 15px; }
+.newsCard h4 { font-size: 16px; font-weight: 600; color: #2D3748; margin-bottom: 5px; }
+.newsCard p { font-size: 14px; color: #8A92A6; }
+
+/* --- Community Posts --- */
+.communityGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.communityCard { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); cursor: pointer; }
+.communityCard img { width: 100%; height: 200px; object-fit: cover; }
+.communityContent { padding: 20px; }
+.author { font-size: 12px; color: #8A92A6; margin-bottom: 5px; }
+.communityContent h4 { font-size: 20px; font-weight: 700; margin-bottom: 15px; color: #2D3748;}
+.communityFooter { display: flex; justify-content: space-between; align-items: center; }
+.communityFooter button { background: none; border: 1px solid #E2E8F0; color: #2D3748; font-weight: 600; padding: 8px 16px; border-radius: 8px; }

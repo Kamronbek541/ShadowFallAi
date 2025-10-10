@@ -1,0 +1,121 @@
+.contactFormSection {
+  margin-top: 60px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2D3748;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  gap: 30px;
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.formWrapper {
+  flex: 2; /* Ocupa 2/3 del espacio */
+  display: flex;
+  flex-direction: column;
+}
+
+.formWrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2D3748;
+  margin-bottom: 30px;
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que el formulario se estire */
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "name   title"
+    "acc    field"
+    "desc   desc";
+  flex-grow: 1; /* Permite que la cuadrícula se estire */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asignación de áreas a los elementos */
+.formGrid > div:nth-child(1) { grid-area: name; }
+.formGrid > div:nth-child(2) { grid-area: title; }
+.formGrid > div:nth-child(3) { grid-area: acc; }
+.formGrid > div:nth-child(4) { grid-area: field; }
+
+.descriptionGroup {
+  grid-area: desc;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionGroup textarea {
+  flex-grow: 1; /* El textarea ocupa todo el espacio disponible */
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  background: #F8F9FA;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  width: 100%;
+  resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--auth-primary-color);
+}
+
+.button {
+  align-self: flex-end; /* Alinea el botón a la derecha */
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  background: var(--auth-primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.imageWrapper {
+  flex: 1; /* Ocupa 1/3 del espacio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+}

@@ -1,0 +1,270 @@
+.benefitsSection {
+  min-height: 100vh;
+  padding: 150px 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D0D0D;
+}
+
+.bgImage {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  height: 80%;
+  z-index: 0;
+}
+
+.leftImage {
+  left: 0;
+}
+
+.rightImage {
+  right: 0;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.mainTitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.columnTitle {
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+  padding: 0 10px;
+}
+
+.column:first-child .columnTitle {
+  text-align: left;
+}
+
+.column:last-child .columnTitle {
+  text-align: right;
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ --- */
+@media (max-width: 1200px) {
+  .mainTitle {
+    font-size: 42px;
+  }
+  
+  
+  .columnsWrapper {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .benefitsSection {
+    min-height: auto;
+    padding: 100px 0;
+  }
+
+  .mainTitle {
+    font-size: 36px;
+        margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .columnsWrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .columnTitle {
+    font-size: 24px;
+    text-align: center !important; /* Центрируем все заголовки на мобилке */
+    margin-bottom: 15px;
+  }
+
+  .card {
+    padding: 18px 20px;
+    font-size: 15px;
+    min-height: 90px;
+    line-height: 1.4;
+  }
+
+  /* Скрываем фоновые изображения на мобилке или уменьшаем их */
+  .bgImage {
+    height: 60%;
+    opacity: 0.5; /* Делаем менее заметными */
+  }
+}
+
+@media (max-width: 768px) {
+  .benefitsSection {
+    padding: 80px 0;
+  }
+
+  .mainTitle {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .columnsWrapper {
+    gap: 30px;
+  }
+
+  .columnTitle {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 16px 18px;
+    font-size: 14px;
+    min-height: 80px;
+    border-radius: 14px;
+  }
+
+  .bgImage {
+    height: 50%;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefitsSection {
+    padding: 60px 0;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+
+  .columnsWrapper {
+    gap: 25px;
+  }
+
+  .column {
+    gap: 15px;
+  }
+
+  .columnTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    padding: 14px 16px;
+    font-size: 13px;
+    min-height: 70px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .bgImage {
+    height: 40%;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefitsSection {
+    padding: 50px 0;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .columnsWrapper {
+    gap: 20px;
+  }
+
+  .columnTitle {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 12px 14px;
+    font-size: 12px;
+    min-height: 65px;
+    border-radius: 10px;
+  }
+
+  /* Полностью скрываем фоновые изображения на очень маленьких экранах */
+  .bgImage {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .benefitsSection {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 22px;
+  }
+
+  .columnTitle {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 10px 12px;
+    font-size: 11px;
+    min-height: 60px;
+  }
+}
+
+/* Для очень маленьких высот экрана */
+@media (max-height: 600px) and (max-width: 768px) {
+  .benefitsSection {
+    padding: 40px 0;
+    min-height: auto;
+  }
+  
+  .card {
+    min-height: 60px;
+    padding: 12px 14px;
+  }
+}

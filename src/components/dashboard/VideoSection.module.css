@@ -1,0 +1,60 @@
+.sectionCard {
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.header h3 { font-size: 22px; font-weight: 700; color: #2D3748; }
+.header p { font-size: 14px; color: #8A92A6; max-width: 450px; }
+.viewMoreBtn { background: var(--auth-primary-color); color: white; border: none; border-radius: 8px; padding: 10px 20px; font-weight: 600; white-space: nowrap; }
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.videoCard {
+  color: inherit;
+  text-decoration: none;
+}
+
+.videoThumbnail {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.videoCard:hover .videoThumbnail {
+  transform: scale(1.03);
+}
+
+.playIcon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+.videoCard h4 { font-size: 16px; font-weight: 600; color: #2D3748; margin-bottom: 5px; }
+.videoCard p { font-size: 14px; color: #8A92A6; line-height: 1.5; }

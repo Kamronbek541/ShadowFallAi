@@ -1,0 +1,269 @@
+.corporateSection {
+  padding: 100px 0;
+  position: relative;
+  background-image: url('../assets/benefit_corporate_back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.mainTitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.columnTitle {
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+  padding: 0 10px;
+}
+
+.column:first-child .columnTitle {
+  text-align: left;
+}
+
+.column:last-child .columnTitle {
+  text-align: right;
+}
+
+.card {
+  background: rgba(40, 40, 40, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 18px 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ --- */
+@media (max-width: 1200px) {
+  .mainTitle {
+    font-size: 42px;
+  }
+  
+  .columnsWrapper {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .corporateSection {
+    padding: 80px 0;
+    background-position: left center; /* Оптимизируем позиционирование фона */
+  }
+
+  .mainTitle {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .columnsWrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .columnTitle {
+    font-size: 24px;
+    text-align: center !important; /* Центрируем все заголовки на мобилке */
+    margin-bottom: 15px;
+  }
+
+  .card {
+    padding: 16px 20px;
+    font-size: 15px;
+    min-height: 65px;
+    line-height: 1.4;
+    border-radius: 14px;
+  }
+
+  .column {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .corporateSection {
+    padding: 60px 0;
+  }
+
+  .mainTitle {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .columnsWrapper {
+    gap: 30px;
+  }
+
+  .columnTitle {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 14px 18px;
+    font-size: 14px;
+    min-height: 60px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .column {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .corporateSection {
+    padding: 50px 0;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+
+  .columnsWrapper {
+    gap: 25px;
+  }
+
+  .columnTitle {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .card {
+    padding: 12px 16px;
+    font-size: 13px;
+    min-height: 55px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .column {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .corporateSection {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .columnsWrapper {
+    gap: 20px;
+  }
+
+  .columnTitle {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 10px 14px;
+    font-size: 12px;
+    min-height: 50px;
+    border-radius: 8px;
+    line-height: 1.3;
+  }
+
+  .column {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .corporateSection {
+    padding: 30px 0;
+  }
+
+  .mainTitle {
+    font-size: 22px;
+  }
+
+  .columnTitle {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 8px 12px;
+    font-size: 11px;
+    min-height: 45px;
+  }
+
+  .columnsWrapper {
+    gap: 15px;
+  }
+}
+
+/* Для очень маленьких высот экрана */
+@media (max-height: 600px) and (max-width: 768px) {
+  .corporateSection {
+    padding: 30px 0;
+  }
+  
+  .card {
+    min-height: 45px;
+    padding: 10px 12px;
+  }
+  
+  .column {
+    gap: 6px;
+  }
+}
+
+/* Оптимизация для ландшафтного режима на мобильных устройствах */
+@media (max-width: 992px) and (orientation: landscape) {
+  .corporateSection {
+    padding: 40px 0;
+  }
+  
+  .columnsWrapper {
+    max-width: 800px;
+  }
+  
+  .card {
+    min-height: 50px;
+    padding: 10px 15px;
+  }
+}

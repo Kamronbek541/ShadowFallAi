@@ -1,0 +1,9 @@
+/* src/components/dashboard/ProfileInfo.module.css */
+.card { background: white; border-radius: 20px; padding: 30px; border: 1px solid #E2E8F0; }
+.card h4 { font-size: 18px; font-weight: 700; margin-bottom: 15px; color: #2D3748; }
+.bio { color: #8A92A6; line-height: 1.6; }
+.divider { border: none; border-top: 1px solid #E2E8F0; margin: 20px 0; }
+.card p { color: #8A92A6; margin-bottom: 12px; }
+.card p strong { color: #2D3748; font-weight: 600; margin-right: 8px; }
+.socials { display: flex; align-items: center; gap: 15px; color: #8A92A6; }
+.socials a { color: var(--auth-primary-color); font-size: 18px; }

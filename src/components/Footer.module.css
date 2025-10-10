@@ -1,0 +1,32 @@
+.footer {
+  padding: 80px 0 60px; /* Сверху отступ побольше */
+  border-top: 1px solid var(--border-color);
+  background-color: #0D0D0D; /* Убедимся, что фон черный */
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footerColumn h4 {
+  font-size: 18px;
+  margin-bottom: 25px; /* Увеличим отступ */
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.footerColumn ul li {
+  margin-bottom: 15px; /* Увеличим отступ */
+}
+
+.footerColumn a {
+  color: var(--text-secondary-color);
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.footerColumn a:hover {
+  color: var(--primary-color);
+}

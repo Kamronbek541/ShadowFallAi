@@ -1,0 +1,144 @@
+.supportPage {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* --- Верхняя секция --- */
+.quickLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.linkCard {
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; /* Чтобы размытые иконки не вылезали */
+}
+
+.cardContent h3 { font-size: 28px; font-weight: 700; color: #2D3748; margin-bottom: 10px; }
+.cardContent p { color: #8A92A6; line-height: 1.6; max-width: 300px; }
+
+/* ИЗМЕНЕНИЕ: Контейнер для иконок */
+.iconsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardIcon {
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--auth-primary-color);
+  user-select: none;
+}
+.largeText {
+    font-size: 100px;
+}
+
+/* ИЗМЕНЕНИЕ: Класс для размытия */
+.blurred {
+  opacity: 0.2;
+  filter: blur(5px);
+}
+
+.button {
+  display: inline-block;
+  background: var(--auth-primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* --- Нижняя секция --- */
+.contactFormSection {
+  display: flex; /* Меняем на flex для лучшего контроля */
+  gap: 30px;
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.formWrapper {
+    flex: 2; /* Форма занимает 2/3 ширины */
+}
+
+.formWrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2D3748;
+  margin-bottom: 30px;
+}
+
+/* ИЗМЕНЕНИЕ: Новая сетка для формы */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto; /* 3 ряда */
+  gap: 20px;
+  grid-template-areas: 
+    "name   title"
+    "acc    field"
+    "desc   desc"; /* Description занимает весь нижний ряд */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+.formGroup:nth-child(1) { grid-area: name; }
+.formGroup:nth-child(2) { grid-area: title; }
+.formGroup:nth-child(3) { grid-area: acc; }
+.formGroup:nth-child(4) { grid-area: field; }
+.descriptionGroup { grid-area: desc; }
+
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.formGroup input, .formGroup textarea {
+  background: #F8F9FA;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formWrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formWrapper .button {
+    align-self: flex-end;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.imageWrapper {
+  flex: 1; /* Картинка занимает 1/3 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageWrapper img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+}

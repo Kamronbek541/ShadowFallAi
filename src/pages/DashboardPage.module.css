@@ -1,0 +1,16 @@
+/* Используем CSS Grid Areas для сложного макета */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+  grid-template-rows: auto auto; /* 2 ряда */
+  gap: 30px;
+  grid-template-areas:
+    "package package blog"
+    "education faq faq";
+}
+
+/* Распределяем виджеты по областям */
+.packageWidgetContainer { grid-area: package; }
+.blogWidgetContainer { grid-area: blog; }
+.educationWidgetContainer { grid-area: education; }
+.faqWidgetContainer { grid-area: faq; }

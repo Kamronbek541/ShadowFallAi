@@ -1,0 +1,169 @@
+/* Главная белая карточка-контейнер */
+.detailsCard {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  gap: 30px;
+  max-height: 400px;
+}
+
+/* Левая колонка с информацией */
+.infoColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- ЗАГОЛОВОК --- */
+.header { 
+  margin-bottom: 20px;
+}
+.header p { 
+  color: #8A92A6; 
+  font-size: 12px;
+}
+.header h2 { 
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 28px;
+  font-weight: 700; 
+  color: #2D3748; 
+  margin-top: 4px; 
+}
+
+/* --- СЕТКА С ФИЧАМИ --- */
+.featuresGrid { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px 25px;
+  border-bottom: 1px solid #E2E8F0; 
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Стилизация скроллбара */
+.featuresGrid::-webkit-scrollbar {
+  width: 4px;
+}
+.featuresGrid::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 4px;
+}
+
+.featureBlock { 
+  display: flex; 
+  flex-direction: column; 
+}
+.featureHeader { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; /* Увеличили отступ между иконкой и текстом */
+  margin-bottom: 10px;
+}
+.icon { 
+  font-size: 22px; /* УВЕЛИЧИЛИ РАЗМЕР ИКОНКИ */
+  color: var(--auth-primary-color); 
+  background: #F0EAFE; 
+  padding: 10px; /* УВЕЛИЧИЛИ ПАДДИНГ */
+  border-radius: 8px; 
+  flex-shrink: 0;
+  width: 36px; /* Фиксированная ширина для выравнивания */
+  height: 36px; /* Фиксированная высота для выравнивания */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featureHeader h4 { 
+  font-size: 14px;
+  font-weight: 600; 
+  color: #2D3748; 
+}
+.featureBlock ul { 
+  list-style-type: '• '; 
+  padding-left: 15px; 
+  color: #8A92A6; 
+  font-size: 12px;
+}
+.featureBlock ul li { 
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+/* Стили для заблокированных фич */
+.locked .icon { 
+  background: #E2E8F0; 
+  color: #8A92A6; 
+}
+.locked .featureHeader h4, .locked ul { 
+  color: #A0AEC0; 
+  opacity: 0.7; 
+}
+.upgradePrompt { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: auto; 
+  padding-top: 10px; 
+}
+.upgradePrompt span { 
+  font-size: 12px;
+  font-weight: 600; 
+  color: #2D3748; 
+}
+.miniUpgradeBtn { 
+  background: var(--auth-primary-color); 
+  color: white; 
+  border: none; 
+  border-radius: 6px; 
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer; 
+}
+
+/* --- ФУТЕР --- */
+.footer { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: auto;
+}
+.footer p { 
+  color: #8A92A6; 
+  font-size: 12px;
+}
+.actions { 
+  display: flex; 
+  gap: 10px; 
+}
+.actions button { 
+  padding: 8px 16px;
+  border-radius: 8px; 
+  font-weight: 600;
+  font-size: 14px; 
+  cursor: pointer; 
+}
+.renewBtn { 
+  background: var(--auth-primary-color); 
+  color: white; 
+  border: none; 
+}
+.upgradeBtn, .invoiceBtn { 
+  background: transparent; 
+  color: #8A92A6; 
+  border: 1px solid #E2E8F0; 
+}
+
+/* --- ПРАВАЯ КОЛОНКА С КАРТИНКОЙ --- */
+.imageColumn {
+  flex-shrink: 0;
+  width: 300px;
+}
+.imageColumn img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 15px;
+}

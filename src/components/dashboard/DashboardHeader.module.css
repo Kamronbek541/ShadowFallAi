@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0; /* Убираем боковые паддинги, т.к. они есть у родителя */
+  margin-bottom: 30px;
+}
+
+/* Левая часть с "хлебными крошками" */
+.breadcrumbs {
+  color: #8A92A6; /* Сероватый цвет текста */
+}
+
+.homeIcon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.path {
+  font-size: 14px;
+}
+.path a {
+  color: inherit;
+}
+.path a:hover {
+  text-decoration: underline;
+}
+
+.currentPage {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2D3748; /* Темно-серый цвет */
+  margin-top: 5px;
+}
+
+/* Правая часть с контролами */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 8px 15px;
+  width: 250px;
+  border: 1px solid #E2E8F0;
+}
+
+.searchIcon {
+  color: #8A92A6;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+}
+.searchBar input::placeholder {
+  color: #A0AEC0;
+}
+
+.signInLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8A92A6;
+  font-weight: 600;
+}
+.signInLink:hover {
+  color: #2D3748;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #8A92A6;
+}
+.iconButton:hover {
+  color: #2D3748;
+}

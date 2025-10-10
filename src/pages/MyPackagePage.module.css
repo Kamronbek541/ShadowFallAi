@@ -1,0 +1,117 @@
+/* --- СТИЛИ ДЛЯ "ПУСТОГО" СОСТОЯНИЯ (НЕТ ПАКЕТА) --- */
+.emptyState {
+  background: white;
+  border-radius: 20px;
+  padding: 80px 40px;
+  text-align: center;
+  border: 1px solid #E2E8F0;
+  margin-bottom: 40px;
+}
+
+.emptyState h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2D3748;
+  margin-bottom: 10px;
+}
+
+.emptyState p {
+  font-size: 16px;
+  color: #8A92A6;
+}
+
+/* --- СТИЛИ ДЛЯ АКТИВНОГО ПАКЕТА --- */
+.activePackage {
+  margin-bottom: 40px;
+}
+
+.currentPackageCard {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.cardText {
+  flex: 1;
+}
+
+.cardText p {
+  color: #8A92A6;
+  font-size: 14px;
+}
+
+.cardText h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2D3748;
+  margin: 10px 0;
+}
+
+.description {
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 30px !important; /* !important to override generic p styles */
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.renewBtn {
+  background: var(--auth-primary-color);
+  color: white;
+  border: none;
+}
+.renewBtn:hover {
+  filter: brightness(1.1);
+}
+
+.upgradeBtn, .invoiceBtn {
+  background: transparent;
+  color: #8A92A6;
+  border: 1px solid #E2E8F0;
+}
+.upgradeBtn:hover, .invoiceBtn:hover {
+  background: #f8f9fa;
+  color: #2D3748;
+}
+
+
+.cardImage {
+  flex-shrink: 0;
+  width: 300px;
+  margin-left: 40px;
+}
+
+.cardImage img {
+  width: 100%;
+}
+
+/* --- КОНТЕЙНЕР ДЛЯ ВЫБОРА ПАКЕТОВ --- */
+.packageSelection {
+  /* Этот контейнер может быть пустым, так как стили применяются в самом компоненте */
+}
+
+
+
+.selectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2D3748;
+  margin-top: 60px; /* Отступ сверху, чтобы отделить от блока "My Package" */
+}

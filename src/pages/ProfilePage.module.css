@@ -1,0 +1,7 @@
+.grid {
+  display: grid;
+  /* ---> ИЗМЕНЕНИЕ: Делаем одну колонку <--- */
+  grid-template-columns: 1fr; 
+  gap: 30px;
+  margin-top: 80px;
+}

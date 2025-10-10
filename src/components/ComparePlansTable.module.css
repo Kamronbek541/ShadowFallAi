@@ -1,0 +1,392 @@
+.compareSection {
+  padding: 100px 0;
+}
+
+/* Десктопная версия таблицы */
+.comparisonTable {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tableCell {
+  padding: 25px 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.footerCell {
+  border-bottom: none;
+}
+
+.tableCell:not(:first-child) {
+  border-left: 1px solid var(--border-color);
+  align-items: center;
+  text-align: center;
+}
+
+.featureHeader, .planHeader {
+  background-color: #111111;
+}
+
+.featureHeader {
+  justify-content: center;
+}
+
+.featureHeader h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.featureHeader p {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+}
+
+.planHeader h4 {
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.planButton {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  max-width: 200px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.planButton:hover {
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+.featureCell {
+  justify-content: center;
+}
+
+.featureCell h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dataCell {
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.dataCell small {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary-color);
+  margin-top: 4px;
+}
+
+.dataCell span {
+  color: white;
+}
+
+.footerCell {
+  padding: 30px 20px;
+}
+
+.salesButton {
+  background: transparent;
+  border: 1px solid var(--text-secondary-color);
+  color: var(--text-secondary-color);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.salesButton:hover {
+  border-color: white;
+  color: white;
+}
+
+.buyButton {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  max-width: 200px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.buyButton:hover {
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Мобильная версия карточек */
+.mobilePlanCard {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: none; /* По умолчанию скрыта */
+}
+
+.mobilePlanHeader {
+  background-color: #111111;
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobilePlanHeader h4 {
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.mobilePlanButton {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 200px;
+}
+.mobilePlanButton:hover {
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+.mobileFeatureRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(30, 30, 30, 0.5);
+}
+
+.mobileFeatureRow:nth-child(even) {
+  background: rgba(40, 40, 40, 0.3);
+}
+
+.mobileFeatureRow:last-child {
+  border-bottom: none;
+}
+
+.mobileFeatureName {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.4;
+}
+
+.mobileFeatureValue {
+  flex: 0 0 120px;
+  margin-left: 15px;
+  text-align: right;
+  font-size: 14px;
+  color: white;
+}
+
+.mobileFeatureValue small {
+  display: block;
+  font-size: 11px;
+  color: var(--text-secondary-color);
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+.mobilePlanFooter {
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  background-color: #111111;
+}
+
+/* --- МЕДИА-ЗАПРОСЫ --- */
+@media (max-width: 1200px) {
+  .comparisonTable {
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+  }
+  
+  .tableCell {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .compareSection {
+    padding: 80px 0;
+  }
+
+  /* Скрываем десктопную таблицу на мобилке */
+  .comparisonTable {
+    display: none;
+  }
+
+  /* Показываем мобильные карточки */
+  .mobilePlanCard {
+    display: block;
+  }
+
+  .mobilePlanHeader {
+    padding: 20px 15px;
+  }
+
+  .mobilePlanHeader h4 {
+    font-size: 22px;
+  }
+
+  .mobileFeatureRow {
+    padding: 16px 15px;
+  }
+
+  .mobileFeatureName {
+    font-size: 13px;
+  }
+
+  .mobileFeatureValue {
+    font-size: 13px;
+    flex: 0 0 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .compareSection {
+    padding: 60px 0;
+  }
+
+  .mobilePlanHeader {
+    padding: 18px 12px;
+  }
+
+  .mobilePlanHeader h4 {
+    font-size: 20px;
+  }
+
+  .mobilePlanButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .mobileFeatureRow {
+    padding: 14px 12px;
+  }
+
+  .mobileFeatureName {
+    font-size: 12px;
+  }
+
+  .mobileFeatureValue {
+    font-size: 12px;
+    flex: 0 0 100px;
+  }
+
+  .mobileFeatureValue small {
+    font-size: 10px;
+  }
+
+  .mobilePlanFooter {
+    padding: 20px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .compareSection {
+    padding: 50px 0;
+  }
+
+  .mobilePlanCard {
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+
+  .mobilePlanHeader {
+    padding: 16px 10px;
+  }
+
+  .mobilePlanHeader h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .mobilePlanButton {
+    padding: 9px 18px;
+    font-size: 13px;
+    max-width: 180px;
+  }
+
+  .mobileFeatureRow {
+    padding: 12px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mobileFeatureName {
+    font-size: 11px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .mobileFeatureValue {
+    margin-left: 0;
+    text-align: left;
+    flex: none;
+    width: 100%;
+  }
+
+  .mobilePlanFooter {
+    padding: 18px 10px;
+  }
+
+  .buyButton {
+    padding: 9px 18px;
+    font-size: 13px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .compareSection {
+    padding: 40px 0;
+  }
+
+  .mobilePlanHeader h4 {
+    font-size: 17px;
+  }
+
+  .mobileFeatureName {
+    font-size: 10px;
+  }
+
+  .mobileFeatureValue {
+    font-size: 11px;
+  }
+}
+
+/* Для десктопной версии - скрываем мобильные карточки */
+@media (min-width: 993px) {
+  .mobilePlanCard {
+    display: none;
+  }
+  
+  .comparisonTable {
+    display: grid;
+  }
+}

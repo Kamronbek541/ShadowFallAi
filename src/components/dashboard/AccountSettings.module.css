@@ -1,0 +1,68 @@
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #E2E8F0;
+}
+.card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.subtitle {
+  color: #8A92A6;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+.formGroup input {
+  border: 1px solid #E2E8F0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--auth-primary-color);
+}
+.divider {
+  grid-column: 1 / -1; /* Растягиваем на все колонки */
+  border: none;
+  border-top: 1px solid #E2E8F0;
+  margin: 10px 0;
+}
+.formSectionTitle {
+  grid-column: 1 / -1;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2D3748;
+  margin-top: 10px;
+}
+.formActions {
+  margin-top: 30px;
+  text-align: right;
+}
+.saveButton {
+  background: var(--auth-primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

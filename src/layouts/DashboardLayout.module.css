@@ -1,0 +1,17 @@
+.dashboardLayout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F8F9FA;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Новый контейнер для контента страницы */
+.pageContent {
+    flex-grow: 1;
+}

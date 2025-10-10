@@ -1,0 +1,18 @@
+/* Полный CSS для сайдбара будет очень большим, вот основа */
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E2E8F0;
+}
+.logo { font-size: 24px; font-family: 'Orbitron', sans-serif; text-align: center; padding: 20px 0; }
+.nav ul { list-style: none; padding: 0; margin: 0; }
+.nav li a { display: flex; align-items: center; gap: 15px; padding: 12px 15px; border-radius: 8px; color: #555; font-weight: 500; margin-bottom: 5px; }
+.nav li a:hover { background: #f0f0f0; }
+.nav li a.active { background: var(--auth-primary-color); color: white; box-shadow: 0 5px 15px rgba(118, 58, 245, 0.4); }
+.navSectionTitle { color: #888; font-size: 12px; font-weight: bold; margin-top: 30px; margin-bottom: 10px; padding-left: 15px; }
+.helpBox { margin-top: auto; background: var(--auth-primary-color); color: white; text-align: center; padding: 20px; border-radius: 15px; }
+/* ... и так далее */

@@ -1,0 +1,293 @@
+.seoSection {
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Фиолетовое свечение на фоне */
+.seoSection::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1000px;
+  height: 400px;
+  background: var(--primary-color);
+  filter: blur(200px);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.headerContent {
+  margin-bottom: 60px;
+}
+
+/* Метка "NEW" */
+.newBadge {
+  display: inline-block;
+  background: #1C1C1E;
+  color: #D0A2F7;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(165, 0, 225, 0.4);
+}
+
+.newBadge span {
+  background: var(--primary-color);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+/* Главный заголовок */
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.1);
+}
+
+/* Подзаголовок */
+.subheading {
+  font-size: 18px;
+  color: var(--text-secondary-color);
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Кнопка */
+.ctaButton {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+}
+
+/* Контейнер для дашборда */
+.dashboardContainer {
+  position: relative;
+}
+
+/* Изображение дашборда */
+.dashboardImage {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(165, 0, 225, 0.2), 
+              0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ --- */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .seoSection {
+    padding: 80px 0;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .subheading {
+    font-size: 17px;
+    max-width: 500px;
+    margin-bottom: 25px;
+  }
+
+  .headerContent {
+    margin-bottom: 50px;
+  }
+
+  .seoSection::before {
+    height: 300px;
+    filter: blur(150px);
+  }
+}
+
+@media (max-width: 768px) {
+  .seoSection {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .newBadge {
+    font-size: 13px;
+    padding: 6px 14px;
+    margin-bottom: 15px;
+  }
+
+  .subheading {
+    font-size: 16px;
+    max-width: 450px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .ctaButton {
+    padding: 12px 28px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .headerContent {
+    margin-bottom: 40px;
+  }
+
+  .seoSection::before {
+    height: 250px;
+    filter: blur(120px);
+    width: 90%;
+  }
+
+  .dashboardImage {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .seoSection {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 36px;
+    text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.1);
+  }
+
+  .newBadge {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-bottom: 12px;
+  }
+
+  .newBadge span {
+    padding: 2px 6px;
+    margin-right: 6px;
+  }
+
+  .subheading {
+    font-size: 15px;
+    max-width: 400px;
+    margin-bottom: 18px;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .ctaButton {
+    padding: 11px 24px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .headerContent {
+    margin-bottom: 35px;
+  }
+
+  .seoSection::before {
+    height: 200px;
+    filter: blur(100px);
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seoSection {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .newBadge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .subheading {
+    font-size: 14px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .headerContent {
+    margin-bottom: 30px;
+  }
+
+  .dashboardImage {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .newBadge {
+    font-size: 10px;
+  }
+
+  .subheading {
+    font-size: 13px;
+  }
+
+  .ctaButton {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+}
+
+/* Для очень маленьких высот экрана */
+@media (max-height: 600px) and (max-width: 768px) {
+  .seoSection {
+    padding: 40px 0;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+  
+  .headerContent {
+    margin-bottom: 30px;
+  }
+}

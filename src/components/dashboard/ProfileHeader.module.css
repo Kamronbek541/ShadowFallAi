@@ -1,0 +1,12 @@
+/* src/components/dashboard/ProfileHeader.module.css */
+.headerWrapper { position: relative; margin-bottom: 20px; }
+.banner { height: 250px; background-image: url('../../assets/sign-up-back.png'); background-size: cover; background-position: center; border-radius: 20px; }
+.profileCard { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); width: 95%; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid rgba(255,255,255,0.3); }
+.avatarPlaceholder { width: 70px; height: 70px; background: #ddd; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #555; position: relative; }
+.editAvatarBtn { position: absolute; bottom: -5px; right: -5px; background: white; border: 1px solid #eee; width: 28px; height: 28px; border-radius: 50%; color: var(--auth-primary-color); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.userInfo { flex-grow: 1; }
+.userInfo h2 { font-size: 20px; font-weight: 700; color: #2D3748; }
+.userInfo p { color: #8A92A6; }
+.tabs { display: flex; gap: 10px; }
+.tabs button { background: none; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; color: #8A92A6; }
+.tabs button.active { background: white; color: #2D3748; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }

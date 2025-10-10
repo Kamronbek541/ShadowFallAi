@@ -1,0 +1,346 @@
+.demoSection {
+  padding: 100px 0;
+  position: relative;
+  background-image: url('../assets/back_price.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sectionTitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+/* Главная карточка, которая содержит форму и картинку */
+.formCard {
+  max-width: 950px;
+  margin: 0 auto;
+  background: #2A2A2E;
+  border-radius: 24px;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Левая часть с формой */
+.formWrapper {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрируем форму по вертикали */
+}
+
+.formWrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center; /* Центрируем заголовок */
+}
+
+.demoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.demoForm input {
+  width: 100%;
+  padding: 14px 18px;
+  background: #1C1C1E;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.demoForm input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.demoForm input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(165, 0, 225, 0.5);
+}
+
+.submitButton {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto; /* Центрируем кнопку */
+}
+
+.submitButton:hover {
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+/* Правая часть с картинкой */
+.imageWrapper {
+  flex-basis: 40%;
+  min-width: 350px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ --- */
+@media (max-width: 992px) {
+  .demoSection {
+    padding: 80px 0;
+  }
+
+  .sectionTitle {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .formCard {
+    flex-direction: column;
+    max-width: 600px;
+    border-radius: 20px;
+  }
+
+  /* Скрываем картинку на мобилке */
+  .imageWrapper {
+    display: none;
+  }
+
+  .formWrapper {
+    padding: 40px 30px;
+    width: 100%;
+  }
+
+  .formWrapper h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .demoForm {
+    gap: 18px;
+  }
+
+  .formRow {
+    gap: 18px;
+  }
+
+  .demoForm input {
+    padding: 13px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .submitButton {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .demoSection {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .formCard {
+    max-width: 500px;
+    border-radius: 18px;
+    margin: 0 20px;
+  }
+
+  .formWrapper {
+    padding: 35px 25px;
+  }
+
+  .formWrapper h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .demoForm {
+    gap: 16px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr; /* Одна колонка на мобилке */
+    gap: 16px;
+  }
+
+  .demoForm input {
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .submitButton {
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 8px;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .demoSection {
+    padding: 50px 0;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .formCard {
+    max-width: 400px;
+    border-radius: 16px;
+    margin: 0 15px;
+  }
+
+  .formWrapper {
+    padding: 30px 20px;
+  }
+
+  .formWrapper h3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .demoForm {
+    gap: 14px;
+  }
+
+  .demoForm input {
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  .submitButton {
+    padding: 12px;
+    font-size: 14px;
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .demoSection {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .formCard {
+    max-width: 350px;
+    border-radius: 14px;
+    margin: 0 10px;
+  }
+
+  .formWrapper {
+    padding: 25px 15px;
+  }
+
+  .formWrapper h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .demoForm {
+    gap: 12px;
+  }
+
+  .demoForm input {
+    padding: 10px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  .submitButton {
+    padding: 11px;
+    font-size: 13px;
+    border-radius: 6px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .formCard {
+    max-width: 320px;
+    border-radius: 12px;
+  }
+
+  .formWrapper {
+    padding: 20px 12px;
+  }
+
+  .formWrapper h3 {
+    font-size: 14px;
+  }
+
+  .demoForm input {
+    padding: 9px 11px;
+  }
+
+  .submitButton {
+    padding: 10px;
+    font-size: 12px;
+    max-width: 180px;
+  }
+}
+
+/* Для ландшафтного режима на мобильных устройствах */
+@media (max-width: 992px) and (orientation: landscape) {
+  .demoSection {
+    padding: 40px 0;
+  }
+  
+  .formCard {
+    max-width: 700px;
+    flex-direction: row;
+  }
+  
+  /* На ландшафтном режиме тоже скрываем картинку */
+  .imageWrapper {
+    display: none;
+  }
+  
+  .formWrapper {
+    padding: 30px 25px;
+    width: 100%;
+  }
+}
