@@ -4,8 +4,8 @@ import styles from './FaqSection.module.css';
 // Данные для FAQ
 const faqData = [
   {
-    question: "What is AI Crow and how can it help my business?",
-    answer: "AI Crow is an all-in-one platform that automates your sales, marketing, and operations. It helps you discover leads, automate outreach, and gain insights to boost revenue and efficiency."
+    question: "What is AI PILLS and how can it help my business?",
+    answer: "AI PILLS is an all-in-one platform that automates your sales, marketing, and operations. It helps you discover leads, automate outreach, and gain insights to boost revenue and efficiency."
   },
   {
     question: "Is there a free trial available?",

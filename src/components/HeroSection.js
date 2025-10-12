@@ -1,18 +1,20 @@
 import React from 'react';
 import styles from './HeroSection.module.css';
 import crowImage from '../assets/Ai_crow.png'; // Убедись, что путь к файлу верный
+import aipillsVideo from '../assets/AIPills.mp4';
+
 
 const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
-      <div className={styles.heroBgText}>SHADOWFALL</div>
+      <div className={styles.heroBgText}>AI⠀PILLS</div>
       
       <div className={`container ${styles.heroContainer}`}>
         <div className={styles.heroContent}>
           <h1>
             Automate Your Business, Boost Revenue
             & Never Miss Another Lead with
-            <span className={styles.aiCrowText}>AI CROW</span>
+            <span className={styles.aiCrowText}>AI PILLS</span>
           </h1>
           <p>Streamline your sales, marketing, and operations in one intelligent platform.</p>
           <div className={styles.heroButtons}>
@@ -74,6 +76,15 @@ const HeroSection = () => {
     clipPath="url(#hexClip)" 
   />
 </svg>
+
+         <video 
+            className={styles.hexagonVideo}
+            src={aipillsVideo} 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+          />
         
         </div>
       </div>

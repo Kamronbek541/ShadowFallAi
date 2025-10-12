@@ -116,7 +116,7 @@ const BlogPage = () => {
                 <div className={styles.section}>
                     <div className={styles.sectionHeader}>
                         <h3>Recent News</h3>
-                        <p>Practical, step-by-step manuals to help you unlock the full power of AI Crow.</p>
+                        <p>Practical, step-by-step manuals to help you unlock the full power of AI PILLS.</p>
                     </div>
                     <div className={styles.newsGrid}>
                         {recentNewsData.map((item, index) => (

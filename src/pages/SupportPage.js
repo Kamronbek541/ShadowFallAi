@@ -15,7 +15,7 @@ const SupportPage = () => {
             <div className={styles.cardContent}>
               <p>Find answer on your question in</p>
               <h3>FAQ</h3>
-              <p>Explore our FAQ to quickly find solutions, understand your package, and get the most out of AI Crow.</p>
+              <p>Explore our FAQ to quickly find solutions, understand your package, and get the most out of AI PILLS.</p>
               <Link to="/faq" className={styles.button}>Go to FAQ Section</Link>
             </div>
             {/* ИЗМЕНЕНИЕ: Три отдельных элемента для знаков вопроса */}

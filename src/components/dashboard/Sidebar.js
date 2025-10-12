@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.logo}>
-        <span>AI CROW</span>
+        <span>AI PILLS</span>
       </div>
       <nav className={styles.nav}>
         <ul>

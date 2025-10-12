@@ -59,7 +59,7 @@ const SignUpPage = () => {
       <div className={styles.content}>
         {/* --- HEADER --- */}
         <header className={styles.header}>
-          <a href="/" className={styles.logo}>AI CROW</a>
+          <a href="/" className={styles.logo}>AI PILLS</a>
           <nav>
             <a href="/dashboard"><span className={styles.icon}></span>DASHBOARD</a>
             <a href="/dashboard/profile"><span className={styles.icon}></span>PROFILE</a>

@@ -81,7 +81,7 @@ const SignInPage = () => {
       </div>
       <div className={styles.imageContainer}>
           <div className={styles.imageOverlay}>
-              <h2>AI CROW</h2>
+              <h2>AI PILLS</h2>
           </div>
       </div>
     </div>

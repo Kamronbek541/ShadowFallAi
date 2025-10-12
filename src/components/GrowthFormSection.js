@@ -13,9 +13,9 @@ const GrowthFormSection = () => {
       <div className={`container ${styles.growthContainer}`}>
         <div className={styles.contentWrapper}>
           <div className={styles.textContent}>
-            <h2>Ready to craft smoother operations, higher profits, and consistent growth with AI Crow?</h2>
+            <h2>Ready to craft smoother operations, higher profits, and consistent growth with AI PILLS?</h2>
             <p>
-              Please fill in the form below — we'll call you within 24 hours to show how AI Crow fits
+              Please fill in the form below — we'll call you within 24 hours to show how AI PILLS fits
               your business & arrange a <span className={styles.highlight}>free trial/demo</span>
             </p>
           </div>

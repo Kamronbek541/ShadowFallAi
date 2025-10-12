@@ -125,24 +125,33 @@
 
 /* --- ПРАВЫЙ БЛОК: ВОРОН И ШЕСТИУГОЛЬНИК --- */
 .heroImageContainer {
-  margin-left: 0px;
   flex: 1;
   position: relative;
-  align-self: stretch;
+  display: flex; /* Добавляем для центрирования */
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
 }
-
 .hexagonSvg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 500px;
   height: 577px;
-  z-index: 1;
+  z-index: 2; /* Рамка поверх видео */
   filter: drop-shadow(0 0 8px var(--primary-color)) 
           drop-shadow(0 0 20px var(--primary-color));
+  pointer-events: none; /* Чтобы не мешала кликать */
 }
+
+.hexagonVideo {
+  width: 480px; /* Чуть меньше рамки */
+  height: 550px;
+  object-fit: cover; /* Видео заполнит контейнер */
+  z-index: 1; /* Видео под рамкой */
+  
+  /* Самая важная часть: обрезаем видео по форме шестиугольника */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
 
 .hexagonSvg polygon {
   fill: none;
@@ -182,6 +191,9 @@
   
   /* Скрываем шестиугольник на мобилке */
   .hexagonSvg {
+    display: none;
+  }
+  .hexagonVideo{
     display: none;
   }
   

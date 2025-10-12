@@ -7,13 +7,13 @@ import VideoSection from '../components/dashboard/VideoSection';
 
 // Данные для гайдов
 const guidesData = {
-  title: "AI Crow Guides",
-  description: "Practical, step-by-step manuals to help you unlock the full power of AI Crow. From setup to advanced strategies, these guides show you how to use our platform.",
+  title: "AI PILLS Guides",
+  description: "Practical, step-by-step manuals to help you unlock the full power of AI PILLS. From setup to advanced strategies, these guides show you how to use our platform.",
   videos: [
-    { title: "How to Set Up Your Dashboard", description: "Learn the basics of navigating AI Crow, customizing your view...", url: "https://youtube.com" },
-    { title: "How to Connect Your CRM", description: "Step-by-step guide to linking AI Crow with your CRM for smooth data flow...", url: "https://youtube.com" },
+    { title: "How to Set Up Your Dashboard", description: "Learn the basics of navigating AI PILLS, customizing your view...", url: "https://youtube.com" },
+    { title: "How to Connect Your CRM", description: "Step-by-step guide to linking AI PILLS with your CRM for smooth data flow...", url: "https://youtube.com" },
     { title: "How to Launch Your First Campaign", description: "Create, schedule, and run your first automated campaign across email, social...", url: "https://youtube.com" },
-    { title: "How to Track Leads and Sales", description: "Discover how AI Crow tracks your leads, updates sales pipelines...", url: "https://youtube.com" },
+    { title: "How to Track Leads and Sales", description: "Discover how AI PILLS tracks your leads, updates sales pipelines...", url: "https://youtube.com" },
     { title: "How to Launch Your First Campaign", description: "Create, schedule, and run your first automated campaign across email, social...", url: "https://youtube.com" }
   ],
   viewMoreLink: "https://youtube.com/channel/your-channel-id"
@@ -22,7 +22,7 @@ const guidesData = {
 // Данные для курсов
 const coursesData = {
   title: "AI Courses",
-  description: "Practical, step-by-step manuals to help you unlock the full power of AI Crow. From setup to advanced strategies, these guides show you how to use our platform.",
+  description: "Practical, step-by-step manuals to help you unlock the full power of AI PILLS. From setup to advanced strategies, these guides show you how to use our platform.",
   videos: [
     { title: "Mastering ChatGPT for Business", description: "Understand what AI can do for your business and where to start...", url: "https://youtube.com" },
     { title: "AI for Marketing & Ads", description: "Use AI to write emails, posts, and client replies in seconds...", url: "https://youtube.com" },
