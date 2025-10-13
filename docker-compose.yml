@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  # Наш бэкенд-сервис
+  server:
+    build:
+      context: ./server # Путь к Dockerfile бэкенда
+    container_name: shadowfall-backend
+    restart: unless-stopped
+    env_file: ./server/.env # Используем переменные из .env файла
+    volumes:
+      - mongo-data:/data/db # Связываем том для данных MongoDB
+    networks:
+      - shadowfall-network
+
+  # Наш фронтенд-сервис
+  client:
+    build:
+      context: . # Путь к Dockerfile фронтенда
+    container_name: shadowfall-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80" # Открываем 80 порт сервера наружу
+    networks:
+      - shadowfall-network
+
+  # База данных MongoDB
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - shadowfall-network
+
+volumes:
+  mongo-data:
+
+networks:
+  shadowfall-network:
+    driver: bridge

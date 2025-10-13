@@ -50,7 +50,8 @@ const SignInPage = () => {
     e.preventDefault();
     setError('');
     try {
-      const response = await axios.post('http://localhost:5252/api/auth/login', formData);
+      const apiUrl = process.env.REACT_APP_API_URL;
+      const response = await axios.post(`${apiUrl}/auth/login`, formData);
       
       // 3. Вызываем функцию login из контекста
       login(response.data.user, response.data.token);

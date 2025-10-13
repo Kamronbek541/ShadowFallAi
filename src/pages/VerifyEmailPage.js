@@ -31,7 +31,8 @@ const VerifyEmailPage = () => {
         setMessage('');
 
         try {
-            const response = await axios.post('http://localhost:5252/api/auth/verify', { // Убедись, что порт 5252
+            const apiUrl = process.env.REACT_APP_API_URL;
+            const response = await axios.post(`${apiUrl}/auth/verify`, { // Убедись, что порт 5252
                 email,
                 code,
             });
