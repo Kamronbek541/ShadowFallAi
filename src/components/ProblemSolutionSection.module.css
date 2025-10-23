@@ -9,6 +9,65 @@
   background-color: #0D0D0D;
 }
 
+
+
+/* --- НОВАЯ СЕКЦИЯ С АНИМАЦИЕЙ --- */
+.animationWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Анимация будет на заднем плане */
+}
+
+/* Стили для всех шаров */
+.ball1, .ball2, .ball3 {
+  position: absolute;
+  border-radius: 50%;
+  /* Градиент в цветах нашего проекта */
+  background: radial-gradient(circle at 30% 30%, var(--primary-color), #3040D3);
+  filter: blur(80px); /* Сильное размытие для мягкого свечения */
+}
+
+/* Размеры и начальные позиции для каждого шара */
+.ball1 {
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 5%;
+  animation: moveBall1 4s infinite alternate ease-in-out;
+}
+.ball2 {
+  width: 300px;
+  height: 300px;
+  top: 60%;
+  right: 10%;
+  animation: moveBall2 6s infinite alternate ease-in-out;
+}
+.ball3 {
+  width: 250px;
+  height: 250px;
+  top: 30%;
+  right: 35%;
+  opacity: 0.7;
+  animation: moveBall3 5s infinite alternate ease-in-out;
+}
+
+@keyframes moveBall1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(100px, 150px) scale(1.2); }
+}
+@keyframes moveBall2 {
+  0% { transform: translate(0, 0) scale(1.1); }
+  100% { transform: translate(-150px, -100px) scale(0.9); }
+}
+@keyframes moveBall3 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, -200px); }
+}
+
+
 .bgImage {
   position: absolute;
   top: 65%;
@@ -267,4 +326,18 @@
     min-height: 60px;
     padding: 12px 14px;
   }
+}
+/* --- АДАПТИВНОСТЬ --- */
+@media (max-width: 992px) {
+  /* На мобильных можно уменьшить размер и размытие шаров */
+  .ball1 { width: 300px; height: 300px; }
+  .ball2 { width: 200px; height: 200px; }
+  .ball3 { width: 150px; height: 150px; }
+}
+
+@media (max-width: 576px) {
+  /* На маленьких экранах делаем их еще меньше */
+  .ball1 { width: 200px; height: 200px; filter: blur(60px); }
+  .ball2 { display: none; } /* Скрываем второй шар для простоты */
+  .ball3 { width: 100px; height: 100px; filter: blur(50px); }
 }

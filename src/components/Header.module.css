@@ -3,9 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 107px;
   z-index: 1000;
-  background: rgba(13, 13, 13, 0.8);
+  background-color: rgba(13, 13, 13, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
 }
 
 .headerContent {
@@ -13,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  padding: 0 20px;
 }
 
 /* Логотип - скрыт по умолчанию, показывается только на мобилке */
@@ -21,6 +27,7 @@
 }
 
 .logo a {
+  font-family: 'Orbitron', sans-serif; 
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -49,8 +56,9 @@
   border: none;
   padding: 12px 28px;
   transition: filter 0.3s ease;
-  font-weight: 500; /* Добавляем такой же font-weight как у других ссылок */
+  font-weight: 500;
 }
+
 
 .quoteButton span {
   position: relative;
@@ -64,24 +72,21 @@
   z-index: 1;
 }
 
+
 .quoteBorder path {
-  fill: #3040D3;
-  stroke: #3040D3;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
   stroke-width: 2;
 }
+
 
 .quoteButton:hover {
   filter: brightness(1.2);
 }
 
-/* Стили для контейнера с SVG-разделителем */
+/* Убираем старый разделитель */
 .headerDivider {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  line-height: 0;
-  z-index: 1;
+  display: none;
 }
 
 .hamburger {
@@ -145,14 +150,14 @@
 
 .mobileNav .quoteButton {
   margin-top: 30px;
-  font-size: 1.5rem; /* Увеличиваем размер шрифта для мобильной версии */
-  font-weight: bold; /* Делаем жирным как другие ссылки в мобильном меню */
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* --- МЕДИА-ЗАПРОСЫ --- */
 @media (max-width: 992px) {
   .logo {
-    display: block; /* Показываем логотип только на мобилке */
+    display: block;
   }
   
   .mainNav {

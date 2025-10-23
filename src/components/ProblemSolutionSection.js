@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './ProblemSolutionSection.module.css';
-import leftCycle from '../assets/benefits_cycle_left.png';
-import rightCycle from '../assets/benefits_cycle_right.png';
+
 
 // Данные для карточек
 const data = [
@@ -15,8 +14,12 @@ const data = [
 const ProblemSolutionSection = () => {
   return (
     <section className={styles.benefitsSection}>
-      <img src={leftCycle} alt="" className={`${styles.bgImage} ${styles.leftImage}`} />
-      <img src={rightCycle} alt="" className={`${styles.bgImage} ${styles.rightImage}`} />
+    <div className={styles.animationWrapper}>
+            <div className={styles.ball1}></div>
+            <div className={styles.ball2}></div>
+            <div className={styles.ball3}></div>
+          </div>
+      
       
       <div className={`container ${styles.contentContainer}`}>
         <h2 className={styles.mainTitle}>Small and Medium Business</h2>

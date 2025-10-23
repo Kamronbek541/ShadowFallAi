@@ -18,6 +18,13 @@ const corporateData = [
 const CorporateSectorSection = () => {
   return (
     <section className={styles.corporateSection}>
+
+            <div className={styles.animationWrapper}>
+        <div className={styles.ball1}></div>
+        <div className={styles.ball2}></div>
+         <div className={styles.ball3}></div>
+      </div>
+
       <div className={`container ${styles.contentContainer}`}>
         <h2 className={styles.mainTitle}>Corporate Sector</h2>
         <div className={styles.columnsWrapper}>

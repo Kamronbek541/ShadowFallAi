@@ -1,46 +1,48 @@
 import React from 'react';
-import styles from './Footer.module.css'; // Импортируем стили
+import styles from './Footer.module.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.footerGrid}>
+          {/* Информация о компании */}
+          <div className={styles.footerInfo}>
+            <h3>AI PILLS</h3>
+            <p>
+              Creating innovative AI solutions for the future. 
+              We transform ideas into intelligent reality.
+            </p>
+          </div>
+
+          {/* Company Links */}
           <div className={styles.footerColumn}>
             <h4>Company</h4>
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#features">Features</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#career">Career</a></li>
+              <li><a href="#growthForm">Contact</a></li>
             </ul>
           </div>
+
+          {/* Contact Info */}
           <div className={styles.footerColumn}>
-            <h4>Help</h4>
+            <h4>Contact</h4>
             <ul>
-              <li><a href="#support">Customer Support</a></li>
-              <li><a href="#delivery">Delivery Details</a></li>
-              <li><a href="#terms">Terms & Conditions</a></li>
-              <li><a href="#privacy">Privacy Policy</a></li>
+              <li>marketing@aipills.ca</li>
+              <li>+1 (647) 765-1745
+              </li>
+              <li>Toronto, Canada</li>
             </ul>
           </div>
-          <div className={styles.footerColumn}>
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#ebooks">Free eBooks</a></li>
-              <li><a href="#tutorials">Development Tutorial</a></li>
-              <li><a href="#blog">How to - Blog</a></li>
-              <li><a href="#youtube">Youtube Playlist</a></li>
-            </ul>
-          </div>
-          <div className={styles.footerColumn}>
-            <h4>Links</h4>
-            <ul>
-               <li><a href="#ebooks">Free eBooks</a></li>
-              <li><a href="#tutorials">Development Tutorial</a></li>
-              <li><a href="#blog">How to - Blog</a></li>
-              <li><a href="#youtube">Youtube Playlist</a></li>
-            </ul>
+        </div>
+
+        {/* Copyright */}
+        <div className={styles.footerBottom}>
+          <div className={styles.copyright}>
+            © {currentYear} AI PILLS. All rights reserved.
           </div>
         </div>
       </div>

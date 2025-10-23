@@ -107,6 +107,7 @@
     font-size: 120px;
   }
 }
+/* ... остальные стили остаются такими же ... */
 
 @media (max-width: 992px) {
   .poweredSection {
@@ -136,28 +137,27 @@
   .cardWrapper {
     width: 100%;
     max-width: 400px;
-    height: auto;
-    min-height: 350px;
+    height: 320px; /* Уменьшили с 380px до 320px */
   }
 
   .card {
-    padding: 25px;
+    padding: 20px 25px; /* Уменьшили верхний/нижний padding */
   }
 
   .card h3 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 12px; /* Уменьшили отступ */
   }
 
   .card p {
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.4; /* Уменьшили межстрочный интервал */
   }
 
   .cardIcon {
-    margin-bottom: 20px;
-    width: 35px;
-    height: 35px;
+    margin-bottom: 15px; /* Уменьшили отступ иконки */
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -182,19 +182,21 @@
 
   .cardWrapper {
     max-width: 350px;
-    min-height: 320px;
+    height: 300px; /* Уменьшили с 350px до 300px */
   }
 
   .card {
-    padding: 20px;
+    padding: 18px 20px;
   }
 
   .card h3 {
     font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .card p {
     font-size: 12px;
+    line-height: 1.4;
   }
 
   .bottomGlow {
@@ -229,37 +231,27 @@
 
   .cardWrapper {
     max-width: 300px;
-    min-height: 300px;
+    height: 280px; /* Уменьшили с 320px до 280px */
   }
 
   .card {
-    padding: 18px;
+    padding: 15px 18px;
   }
 
   .card h3 {
     font-size: 17px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .card p {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.4;
   }
 
   .cardIcon {
-    margin-bottom: 15px;
-    width: 30px;
-    height: 30px;
-  }
-
-  /* Упрощаем clip-path для мобильных устройств */
-  .cardWrapper,
-  .card {
-    clip-path: polygon(
-      15px 0, calc(100% - 15px) 0, 100% 15px, 
-      100% calc(100% - 15px), calc(100% - 15px) 100%, 
-      15px 100%, 0 calc(100% - 15px), 0 15px
-    );
+    margin-bottom: 12px;
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -280,11 +272,11 @@
 
   .cardWrapper {
     max-width: 280px;
-    min-height: 280px;
+    height: 260px; /* Уменьшили с 300px до 260px */
   }
 
   .card {
-    padding: 15px;
+    padding: 12px 15px;
   }
 
   .card h3 {
@@ -304,7 +296,7 @@
 
   .cardWrapper {
     max-width: 260px;
-    min-height: 260px;
+    height: 240px; /* Самая компактная версия */
   }
 
   .card h3 {

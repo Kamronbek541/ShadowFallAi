@@ -1,24 +1,41 @@
 .footer {
-  padding: 80px 0 60px; /* Сверху отступ побольше */
-  border-top: 1px solid var(--border-color);
-  background-color: #0D0D0D; /* Убедимся, что фон черный */
+  padding: 60px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #0D0D0D;
 }
 
 .footerGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footerInfo h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  font-weight: 700;
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.footerInfo p {
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+  max-width: 300px;
 }
 
 .footerColumn h4 {
-  font-size: 18px;
-  margin-bottom: 25px; /* Увеличим отступ */
+  font-size: 16px;
+  margin-bottom: 20px;
   color: var(--text-color);
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footerColumn ul li {
-  margin-bottom: 15px; /* Увеличим отступ */
+  margin-bottom: 12px;
 }
 
 .footerColumn a {
@@ -29,4 +46,45 @@
 
 .footerColumn a:hover {
   color: var(--primary-color);
+}
+
+.footerBottom {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.copyright {
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 30px;
+  }
+  
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .footerInfo {
+    text-align: center;
+  }
+  
+  .footerInfo p {
+    max-width: 100%;
+  }
+  
+  .footerColumn {
+    text-align: center;
+  }
+  
+  .footerColumn h4 {
+    margin-bottom: 15px;
+  }
 }

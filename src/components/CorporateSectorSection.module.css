@@ -1,12 +1,64 @@
 .corporateSection {
   padding: 100px 0;
   position: relative;
-  background-image: url('../assets/benefit_corporate_back.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden; /* Важно, чтобы шары не вылезали */
+  background-color: #0D0D0D;
 }
 
+/* --- НОВАЯ СЕКЦИЯ С АНИМАЦИЕЙ --- */
+.animationWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.ball1, .ball2, .ball3 {
+  position: absolute;
+  border-radius: 50%;
+  /* Градиент в темных тонах, подходящих к фону */
+  background: radial-gradient(circle at 30% 30%, #4c1d95, #1e1b4b);
+  filter: blur(100px);
+  opacity: 0.6;
+}
+
+.ball1 {
+  width: 500px;
+  height: 500px;
+  top: -10%;
+  left: -15%;
+  animation: moveCorporateBall1 4s infinite alternate ease-in-out;
+}
+.ball2 {
+  width: 450px;
+  height: 450px;
+  bottom: -15%;
+  right: -10%;
+  animation: moveCorporateBall2 5s infinite alternate ease-in-out;
+}
+
+.ball3 {
+  width: 400px;
+  height: 400px;
+  bottom: 10%;
+  right: 20%;
+  animation: moveCorporateBall3 5s infinite alternate ease-in-out;
+}
+
+@keyframes moveCorporateBall1 {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to { transform: translate(300px, 280px) rotate(90deg); }
+}
+@keyframes moveCorporateBall2 {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to { transform: translate(-280px, -220px) rotate(90deg); }
+}
+@keyframes moveCorporateBall3 {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to { transform: translate(-620px, -180px) rotate(90deg); }
+}
 .contentContainer {
   position: relative;
   z-index: 1;
@@ -265,5 +317,27 @@
   .card {
     min-height: 50px;
     padding: 10px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ball1, .ball2, .ball3 {
+    width: 400px;
+    height: 400px;
+    filter: blur(80px);
+  }
+}
+
+@media (max-width: 576px) {
+  .ball1 {
+    width: 300px;
+    height: 300px;
+    filter: blur(70px);
+  }
+  .ball2 {
+    display: none; /* Скрываем второй шар на маленьких экранах */
+  }
+  .ball3 {
+    display: none; /* Скрываем второй шар на маленьких экранах */
   }
 }

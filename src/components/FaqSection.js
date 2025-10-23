@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './FaqSection.module.css';
 
-// Данные для FAQ
 const faqData = [
   {
     question: "What is AI PILLS and how can it help my business?",
@@ -22,7 +21,7 @@ const faqData = [
 ];
 
 const FaqSection = () => {
-  const [openIndex, setOpenIndex] = useState(0); // Первый вопрос открыт по умолчанию
+  const [openIndex, setOpenIndex] = useState(0);
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -31,7 +30,7 @@ const FaqSection = () => {
   return (
     <section className={styles.faqSection}>
       <div className="container">
-        <h2 className={styles.title}>Frequently Asked Questions (FAQ)</h2>
+        <h2 className={styles.title}>Frequently Asked Questions</h2>
         <div className={styles.faqGrid}>
           {faqData.map((item, index) => {
             const isOpen = openIndex === index;
@@ -43,13 +42,11 @@ const FaqSection = () => {
               >
                 <div className={styles.question}>
                   <span>{item.question}</span>
-                  <span className={styles.icon}>{isOpen ? '−' : '+'}</span>
+                  <span className={styles.icon}>+</span>
                 </div>
-                {isOpen && (
-                  <div className={styles.answer}>
-                    <div className={styles.answerContent}>{item.answer}</div>
-                  </div>
-                )}
+                <div className={styles.answer}>
+                  <div className={styles.answerContent}>{item.answer}</div>
+                </div>
               </div>
             );
           })}

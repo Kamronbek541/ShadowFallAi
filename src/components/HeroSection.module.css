@@ -127,7 +127,7 @@
 .heroImageContainer {
   flex: 1;
   position: relative;
-  display: flex; /* Добавляем для центрирования */
+  display: flex; 
   align-items: center;
   justify-content: center;
   min-height: 600px;
@@ -136,20 +136,19 @@
   position: absolute;
   width: 500px;
   height: 577px;
-  z-index: 2; /* Рамка поверх видео */
+  z-index: 2; 
   filter: drop-shadow(0 0 8px var(--primary-color)) 
           drop-shadow(0 0 20px var(--primary-color));
-  pointer-events: none; /* Чтобы не мешала кликать */
+  pointer-events: none; 
 }
 
 .hexagonVideo {
-  width: 480px; /* Чуть меньше рамки */
+  width:520px;
   height: 550px;
-  object-fit: cover; /* Видео заполнит контейнер */
-  z-index: 1; /* Видео под рамкой */
-  
-  /* Самая важная часть: обрезаем видео по форме шестиугольника */
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  object-fit: cover; 
+  z-index: 1;
+  /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+  clip-path: polygon(50% 0%, 100% 18%, 100% 75%, 50% 100%, 0% 75%, 0% 18%);
 }
 
 

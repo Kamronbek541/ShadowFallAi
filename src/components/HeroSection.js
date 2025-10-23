@@ -54,7 +54,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className={styles.heroImageContainer}>
-<svg 
+{/* <svg 
   className={styles.hexagonSvg} 
   viewBox="0 0 100 115.47" 
   xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,6 @@ const HeroSection = () => {
     </clipPath>
   </defs>
 
-  {/* "толстый" hexagon */}
   <polygon 
     points="50,0 100,28.86 100,86.6 50,115.47 0,86.6 0,28.86"
     fill="none"
@@ -75,7 +74,7 @@ const HeroSection = () => {
     strokeMiterlimit="20"
     clipPath="url(#hexClip)" 
   />
-</svg>
+</svg> */}
 
          <video 
             className={styles.hexagonVideo}

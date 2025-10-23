@@ -11,7 +11,7 @@ const Header = () => {
         <div className={styles.headerContent}>
           {/* Логотип теперь показывается только на мобилке */}
           <div className={styles.logo}>
-            <HashLink smooth to="/#">SHADOWFALL</HashLink>
+            <HashLink smooth to="/#">AI PILLS</HashLink>
           </div>
 
           <nav className={styles.mainNav}>
@@ -48,24 +48,24 @@ const Header = () => {
       <div className={`${styles.mobileNav} ${isMenuOpen ? styles.open : ''}`}>
         <nav>
           <ul>
-            <li onClick={() => setIsMenuOpen(false)}><HashLink smooth to="/#about">About Us</HashLink></li>
             <li onClick={() => setIsMenuOpen(false)}><a href="/benefits">Benefits</a></li>
             <li onClick={() => setIsMenuOpen(false)}><HashLink smooth to="/#features">Features</HashLink></li>
             <li onClick={() => setIsMenuOpen(false)}><a href="/pricing">Pricing</a></li>
             <li onClick={() => setIsMenuOpen(false)}><a href="/faq">FAQ</a></li>
           </ul>
         </nav>
-        {/* Кнопка в мобильном меню теперь имеет такие же стили как другие ссылки */}
-        <a href="/sign-in" className={`btn ${styles.quoteButton}`}>Get Quote</a>
       </div>
 
-      <div className={styles.headerDivider}>
+      {/* <div className={styles.headerDivider}>
         <svg width="100%" height="20" viewBox="0 0 1920 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 1 L800 1 L840 19 L1080 19 L1120 1 L1920 1" stroke="rgba(255, 255, 255, 0.2)" strokeWidth="2" fill="none"/>
         </svg>
-      </div>
+      </div> */}
     </header>
   );
 };
 
 export default Header;
+
+
+
