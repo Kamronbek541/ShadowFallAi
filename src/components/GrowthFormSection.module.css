@@ -21,6 +21,21 @@
   align-items: flex-end;
 }
 
+.statusMessage {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+  /* Для версии с фиолетовым фоном */
+  color: white; 
+}
+
+/* Для версии без фона (на странице Pricing) */
+.growthSection.noBackground .statusMessage {
+  color: var(--primary-color);
+}
+
+
+
 /* --- Текстовый блок --- */
 .textContent {
   font-family: 'Orbitron', sans-serif;

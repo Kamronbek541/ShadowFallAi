@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './HeroSection.module.css';
-import crowImage from '../assets/Ai_crow.png'; // Убедись, что путь к файлу верный
-import aipillsVideo from '../assets/AIPills.mp4';
+// import aipillsVideo from '../assets/AIPills.mp4';
+// import aipillsVideo from '../assets/AICrow.mp4';
+import aipillsVideo from '../assets/AICrow-unscreen.gif';
 
 
 const HeroSection = () => {
@@ -76,15 +77,22 @@ const HeroSection = () => {
   />
 </svg> */}
 
-         <video 
+         {/* <video 
             className={styles.hexagonVideo}
             src={aipillsVideo} 
             autoPlay 
             loop 
             muted 
             playsInline 
-          />
+          /> */}
         
+
+<img 
+  key={Math.random()} // Генерирует новый ключ при каждом рендере
+  className={styles.hexagonVideo}
+  src={aipillsVideo} 
+  alt="AI Pills animation"
+/>
         </div>
       </div>
     </section>
