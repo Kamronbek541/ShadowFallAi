@@ -83,7 +83,7 @@ const PackagesSection = () => {
           ))}
         </div>
       </div>
-      <img src={crowsImage} alt="Decorative crows" className={styles.crowsImage} />
+      {/* <img src={crowsImage} alt="Decorative crows" className={styles.crowsImage} /> */}
     </section>
   );
 };

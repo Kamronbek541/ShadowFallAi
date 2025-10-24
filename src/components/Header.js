@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import { HashLink } from 'react-router-hash-link';
+import aipillsLogo from '../assets/aiPillsLogo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,12 @@ const Header = () => {
 
           <nav className={styles.mainNav}>
             <ul>
-              <li><HashLink smooth to="/">About Us</HashLink></li>
+              {/* <li><HashLink smooth to="/">About Us</HashLink></li> */}
+              <li>
+              <HashLink smooth to="/#">
+              <img src={aipillsLogo} alt="AI PILLS Logo" />
+            </HashLink>
+            </li>
               <li><a href="/benefits">Benefits</a></li>
               <li><a href="/#features">Features</a></li>
               <li><a href="/pricing">Pricing</a></li>

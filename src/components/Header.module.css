@@ -33,9 +33,27 @@
   letter-spacing: 2px;
   color: var(--text-color);
 }
+.mainNav img {
+  height: 70px; /* или нужная вам высота */
+  width: auto; /* сохраняет пропорции */
+  vertical-align: middle; /* выравнивание по вертикали с текстом */
+}
+
+/* Если нужно точнее контролировать размер */
+.mainNav li:first-child a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mainNav li:first-child img {
+  max-height: 70px; /* регулируйте под нужный размер */
+  width: auto;
+}
 
 .mainNav ul {
   display: flex;
+  align-items: center; /* ← это ключевое */
   gap: 40px;
 }
 
