@@ -24,7 +24,10 @@ const SeoSection = () => {
             Elevate your site's visibility effortlessly with AI, where smart 
             technology meets user-friendly SEO tools.
           </p>
-          <button className={`btn ${styles.ctaButton}`}>Start for free</button>
+             <a href="#growthForm" className={`btn ${styles.ctaButton}`}>
+            Start for free
+          </a>
+          {/* <button className={`btn ${styles.ctaButton}`}>Start for free</button> */}
         </div>
 
         <div className={styles.dashboardContainer}>

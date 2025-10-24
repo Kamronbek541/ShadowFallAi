@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SolutionSection.module.css';
-import allInOneImage from '../assets/all_in_one.png'; 
+import allInOneImage from '../assets/all_in_one1.png'; 
 
 const SolutionSection = () => {
   return (
@@ -69,9 +69,9 @@ const SolutionSection = () => {
           <div className={styles.allInOne}>
             <div className={styles.glow}></div>
             <img src={allInOneImage} alt="All in one platform" className={styles.allInOneImage} />
-            <div className={styles.allInOneContent}>
+            {/* <div className={styles.allInOneContent}>
               ALL IN ONE <span>PLATFORM</span>
-            </div>
+            </div> */}
           </div>
 
         </div>

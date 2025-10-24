@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PoweredSection.module.css';
-import handsImage from '../assets/hands.png';
+import handsImage from '../assets/hands1.png';
 
 const cardData = [
   {

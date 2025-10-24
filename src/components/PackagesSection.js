@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './PackagesSection.module.css';
 import crowsImage from '../assets/min_worn.png'; // Убедись, что картинка здесь
+// import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 // Данные для карточек тарифов
 const packagesData = [
@@ -69,7 +71,13 @@ const PackagesSection = () => {
                     </div>
                   ))}
                 </div>
-                <button className={`btn ${styles.learnMoreButton}`}>Learn More</button>
+                {/* <button className={`btn ${styles.learnMoreButton}`}>Learn More</button> */}
+                {/* <Link to="/pricing" className={`btn ${styles.learnMoreButton}`}>
+                  Learn More
+                </Link> */}
+                <HashLink smooth to="/pricing#compare-table" className={`btn ${styles.learnMoreButton}`}>
+                  Learn More
+                </HashLink>
               </div>
             </div>
           ))}

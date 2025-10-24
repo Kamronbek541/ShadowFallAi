@@ -3,13 +3,12 @@ import DashboardLayout from '../layouts/DashboardLayout';
 import styles from './SupportPage.module.css';
 import supportImage from '../assets/support_dash.png';
 import { Link } from 'react-router-dom';
-import { FaClock } from 'react-icons/fa'; // Импортируем иконку часов
+import { FaClock } from 'react-icons/fa';
 
 const SupportPage = () => {
   return (
     <DashboardLayout currentPage="Support">
       <div className={styles.supportPage}>
-        {/* --- Верхняя секция с быстрыми ссылками --- */}
         <div className={styles.quickLinks}>
           <div className={styles.linkCard}>
             <div className={styles.cardContent}>
@@ -18,7 +17,6 @@ const SupportPage = () => {
               <p>Explore our FAQ to quickly find solutions, understand your package, and get the most out of AI PILLS.</p>
               <Link to="/faq" className={styles.button}>Go to FAQ Section</Link>
             </div>
-            {/* ИЗМЕНЕНИЕ: Три отдельных элемента для знаков вопроса */}
             <div className={styles.iconsWrapper}>
               <div className={`${styles.cardIcon} ${styles.blurred}`}>?</div>
               <div className={styles.cardIcon}>?</div>

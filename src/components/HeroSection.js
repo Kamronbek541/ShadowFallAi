@@ -19,7 +19,7 @@ const HeroSection = () => {
           </h1>
           <p>Streamline your sales, marketing, and operations in one intelligent platform.</p>
           <div className={styles.heroButtons}>
-            <button className={`btn ${styles.getStartedButton}`}>
+<a href="#growthForm"className={`btn ${styles.getStartedButton}`}>
   <span>Get Started</span>
   <svg
     className={styles.getStartedBorder}
@@ -30,10 +30,10 @@ const HeroSection = () => {
   >
     <path d="M1,1 H159 V39 L149,49 H1 V1 Z" />
   </svg>
-</button>
+</a>
             
             {/* ИЗМЕНЕНИЕ: Новый, более точный SVG для рамки "Learn More" */}
-<a href="#learn" className={`btn ${styles.learnMoreButton}`}>
+<a href="#growthForm" className={`btn ${styles.learnMoreButton}`}>
   <span>Learn More</span>
   <svg
     className={styles.learnMoreBorder}

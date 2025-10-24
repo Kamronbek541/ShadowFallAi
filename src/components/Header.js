@@ -24,7 +24,8 @@ const Header = () => {
             </ul>
           </nav>
           {/* <a href="/sign-in" className={`btn ${styles.quoteButton}`}>Get Quote</a> */}
-          <a href="/sign-in" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}>
+          {/* <a href="/sign-in" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}> */}
+          <a href="/#growthForm" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}>
             <span>Get a Quote</span>
             <svg
               className={styles.quoteBorder}

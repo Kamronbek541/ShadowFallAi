@@ -121,6 +121,9 @@
   transition: all 0.3s ease;
   width: 100%;
   margin-top: auto;
+   display: block; /* Заставляет <a> вести себя как блочный элемент */
+  text-align: center; /* Центрирует текст внутри */
+  text-decoration: none; /* Убирает стандартное подчеркивание у ссылки */
 }
 
 .learnMoreButton:hover {

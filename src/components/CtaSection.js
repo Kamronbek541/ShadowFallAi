@@ -11,9 +11,10 @@ const CtaSection = () => {
             <br />
             & bring ideas more clearly.
           </h2>
-          <button className={`btn ${styles.ctaButton}`}>
-            Start 14 Days Free Trial
-          </button>
+        <a href="#growthForm" className={`btn ${styles.ctaButton}`}>
+                    Start 3 Days Free Trial
+                  </a>
+
         </div>
       </div>
     </section>

@@ -10,7 +10,10 @@ const PricingPage = () => {
   return (
     <>
       <PricingPackages />
-       <ComparePlansTable /> {/* 2. Добавляем компонент */}
+       {/* <ComparePlansTable />  */}
+             <div id="compare-table">
+        <ComparePlansTable />
+      </div>
       {/* Здесь будут остальные секции этой страницы */}
       <GrowthFormSection/>
     </>

@@ -56,7 +56,7 @@
 }
 
 .allInOneImage {
-  width: 100%;
+  width: 50%;
   position: relative;
   z-index: 2;
 }
