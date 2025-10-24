@@ -10,10 +10,11 @@ const Footer = () => {
         <div className={styles.footerGrid}>
           {/* Информация о компании */}
           <div className={styles.footerInfo}>
-            <h3>AI PILLS</h3>
+            <h3>AI PILLS By CARVAY INC</h3>
             <p>
-              Creating innovative AI solutions for the future. 
-              We transform ideas into intelligent reality.
+             CARVAY INC presents AI PILLS - a revolutionary automation product.
+              We've built smart tools to optimize business processes.
+             AI PILLS is the future of efficient business from Carvay.
             </p>
           </div>
 
@@ -42,7 +43,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className={styles.footerBottom}>
           <div className={styles.copyright}>
-            © {currentYear} AI PILLS. All rights reserved.
+            © {currentYear} AI PILLS. Provided by CARVAY INC. All rights reserved.
           </div>
         </div>
       </div>
