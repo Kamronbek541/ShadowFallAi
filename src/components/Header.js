@@ -27,18 +27,12 @@ const Header = () => {
               <li><a href="/#features">Features</a></li>
               <li><a href="/pricing">Pricing</a></li>
               <li><a href="/faq">FAQ</a></li>
+              <li><a href="https://cabinet.aipills.ca">Login</a></li>
+              <li><a href="https://cabinet.aipills.ca/workflows">Signup</a></li>
             </ul>
           </nav>
           {/* <a href="/sign-in" className={`btn ${styles.quoteButton}`}>Get Quote</a> */}
           {/* <a href="/sign-in" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}> */}
-          <a href="https://cabinet.aipills.ca" className={styles.loginButton}>
-           Login
-          </a>
-        
-        {/* Ссылка на регистрацию */}
-        <a href="https://cabinet.aipills.ca/workflows" className={styles.signupButton}>
-          Sign Up
-        </a>
 
         {/* Get Quote кнопка */}
         <a href="https://cabinet.aipills.ca/workflows" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}>
@@ -70,6 +64,8 @@ const Header = () => {
             <li onClick={() => setIsMenuOpen(false)}><HashLink smooth to="/#features">Features</HashLink></li>
             <li onClick={() => setIsMenuOpen(false)}><a href="/pricing">Pricing</a></li>
             <li onClick={() => setIsMenuOpen(false)}><a href="/faq">FAQ</a></li>
+            <li onClick={() => setIsMenuOpen(false)}><a href="https://cabinet.aipills.ca">Login</a></li>
+            <li onClick={() => setIsMenuOpen(false)}><a href="https://cabinet.aipills.ca/workflows">Signup</a></li>
           </ul>
         </nav>
       </div>
