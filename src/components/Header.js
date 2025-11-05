@@ -31,7 +31,18 @@ const Header = () => {
           </nav>
           {/* <a href="/sign-in" className={`btn ${styles.quoteButton}`}>Get Quote</a> */}
           {/* <a href="/sign-in" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}> */}
-          <a href="/#growthForm" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}>
+          <a href="https://cabinet.aipills.ca" className={styles.loginButton}>
+           Login
+          </a>
+        
+        {/* Ссылка на регистрацию */}
+        <a href="https://cabinet.aipills.ca/workflows" className={styles.signupButton}>
+          Sign Up
+        </a>
+
+        {/* Get Quote кнопка */}
+        <a href="https://cabinet.aipills.ca/workflows" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}>
+          {/* <a href="/#growthForm" className={`btn ${styles.quoteButton} ${styles.desktopOnly}`}> */}
             <span>Get a Quote</span>
             <svg
               className={styles.quoteBorder}
